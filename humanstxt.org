@@ -16,5 +16,5 @@
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5, Bootstrap 4, Flask
+    CSS3, HTML5, Bootstrap 4, Flask, Python
     
