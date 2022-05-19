@@ -26,8 +26,8 @@ def index():
 
     # for i in animation_info:
     #     mongo.db.animation.insert_one(i)
-    return render_template("index.html", index_page=True,
-                           )
+
+    return render_template("index.html", index_page=True)
 
 
 # ==========handle login logout register======================================
@@ -134,9 +134,6 @@ def profile():
 def page_not_found(*args, **kwargs):
     # note that we set the 404 status explicitly
     return render_template('404.html'), 404
-
-
-
 
 
 if __name__ == "__main__":
