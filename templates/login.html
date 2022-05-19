@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="login-container">
+        <div class="row">
+            <form class="col s12 m6 offset-m3" method="POST" action="{{ url_for('login') }}">
+                <div class="mb-3 mt-3">
+                    <label for="username" class="form-label">Username:</label>
+                    <input class="form-control validate"
+                           id="username"
+                           name="username"
+                           type="text"
+                           minlength="3"
+                           maxlength="15"
+                           required>
+                    <span class="error-message hide" id="username_error">Error message</span>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password:</label>
+                    <input type="password"
+                           class="form-control validate"
+                           id="password"
+                           placeholder="Enter password"
+                           name="password"
+                           minlength="5"
+                           maxlength="15"
+                           required>
+                    <span class="error-message hide" id="password_error">Error password message</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </form>
+        </div>
+
+
+        <div class="row mt-3">
+            <div class="col s12">
+                <p class="right-align">
+                    New Here?
+                    <a href="{{ url_for('register') }}" class="light-blue-text text-darken-4">Register Account</a>
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

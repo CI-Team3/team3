@@ -1,0 +1,76 @@
+HEROKU
+
+1. Install the Heroku CLI if not yet installed
+Further information about installation and setup can get here
+
+2. Perform login with the heroku login command
+You will be prompted with your default browser window for completing the login at the Heroku portal.
+
+3. Assuming you already have your app set up at Heroku (if not, please follow this), you just need to add a new remote for your git repo with Heroku CLI.
+Run heroku git:remote -a example-app - substitute "example-app" with your app name.
+
+4. git remote -v to check if the remote has been set successfully
+You should see something like this appear as a response
+
+heroku  https://git.heroku.com/your-app-name.git (fetch)
+heroku  https://git.heroku.com/your-app-name.git (push)
+5. Push your branch to the new heroku remote
+git push heroku your_branch_name
+
+6. You should see the progress of your deployment being displayed in the terminal
+
+
+heroku git:remote -a earthlings-hackathon
+
+
+ git add .
+ git commit -am "make it better"
+ git push heroku main
+
+
+
+git add .
+git commit -m "commit message"
+git push
+
+#  to create and checkout new branch
+git checkout -b <new branch name>
+#  to checkout existing branch
+git checkout <new branch name>
+
+
+
+git checkout master
+git pull --rebase
+git checkout Mybranch
+git rebase master
+git push -f origin Mybranch
+git fetch
+git rebase origin/dev
+
+git pull origin master --allow-unrelated-histories
+
+#To add new origin
+git remote add origin https://github.com/user/repo.git
+
+git push --set-upstream origin main
+
+# Verify new remote URL
+ git remote -v
+
+#To untrack folder
+git rm -r --cached <folder name>
+
+
+
+pip install "pymongo[srv]"
+
+git pull origin main
+
+
+
+pip3 install flask
+pip3 install pymongo
+pip3 install Flask-PyMongo
+pip3 install Werkzeug
+python3 -m pip install "pymongo[srv]"

@@ -1,0 +1,17 @@
+__pycache__
+.vscode
+.vscode/*
+core.Microsoft*
+core.mongo*
+core.python*
+__pycache__/
+*.py[cod]
+node_modules/
+.github/
+examples
+images_sources.txt
+venv
+.idea
+.idea/*
+env.py
+.gitpod.yml

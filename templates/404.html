@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Local stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/404.css') }}" type="text/css">
+
+    <title>Lost 404 page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="img_bg"></div>
+        <div class="text">
+            <span>404</span>
+            <h1>LOOKING FOR SOMETHING ELSE?</h1>
+            <h2>WE MAY NOT HAVE IT!</h2>
+            <a href="{{ url_for('index') }}">Take me back</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
