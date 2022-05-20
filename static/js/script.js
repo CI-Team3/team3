@@ -1,1 +1,1 @@
-/*jshint esversion: 6 */
+
