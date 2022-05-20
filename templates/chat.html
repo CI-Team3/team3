@@ -8,7 +8,7 @@
     <ul class="list-group list-group-flush mt-3">
         {% for message in chat %}
             <li class="list-group-item mt-1">
-                <span>{{ message.username }}</span> said: <span>{{ message.text }}</span>
+                <span class="badge badge-secondary">{{ message.username }}</span> <span>{{ message.text }}</span>
                 {% if session.user == "coder" or session.user == 'alex' %}
                     <a href="{{ url_for('chat_remove_message', message_id=message._id) }}">Remove comment</a>
                 {% endif %}
@@ -21,8 +21,8 @@
 
 
     <form action="{{ url_for('chat_add') }}" method="post">
-        <label for="username">Username</label>
-        <input type="text" name="username" id="username">
+        <label for="username"></label>
+        <input type="hidden" name="username" id="username" value="{{ session.user }}">
         <label for="text-field">Your message</label>
         <input type="text" name="text-field" id="text-field">
         <button class="btn btn-primary">submit</button>
