@@ -73,6 +73,33 @@ def story():
     return render_template("story.html", stories=context)
 
 
+@app.route("/chat")
+def chat():
+    chat_messages = list(mongo.db.chat.find())
+    return render_template("chat.html", chat=chat_messages)
+
+
+@app.route("/chat/add", methods=['POST', ])
+def chat_add():
+    if request.method == 'POST':
+        submit = {
+            'username': request.form.get('username'),
+            'text': request.form.get("text-field")
+        }
+        print(submit)
+        mongo.db.chat.insert_one(submit)
+        return redirect(url_for('chat_display'))
+    chat = list(mongo.db.chat.find())
+    return render_template("chat.html", chat=chat)
+
+
+@app.route("/chat/delete")
+def chat_remove_message(message_id):
+    if session['user'] == 'coder':
+        mongo.db.chat.delete_one({'_id': ObjectId(message_id)})
+    return redirect(url_for('chat_display'))
+
+
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if "user" in session:
