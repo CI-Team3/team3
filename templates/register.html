@@ -14,10 +14,9 @@
                            minlength="3"
                            maxlength="15"
                            pattern="^[a-zA-Z0-9]{3,15}$"
-                           onchange="validateInput(this.id);"
                            required>
-{#                          TODO: add JS validation when ivalid data entered#}
-                    <span class="error-message hide" id="username_error">Error message</span>
+
+
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Password:</label>
@@ -29,22 +28,10 @@
                            minlength="5"
                            maxlength="15"
                            required>
-                    <span class="error-message hide" id="password_error">Error password message</span>
-                </div>
-                <div class="mb-3">
-                    <label for="password2" class="form-label">Repeat Password:</label>
-                    <input type="password"
-                           class="form-control validate"
-                           id="password2"
-                           placeholder="Repeat password"
-                           name="password2"
-                           minlength="5"
-                           maxlength="15"
-                           required>
-                    <span class="error-message hide" id="password2_error">Error password2 message</span>
+
                 </div>
 
-                <button type="submit" id="register_submit" class="btn btn-primary mt-3 disabled">Submit</button>
+                <button type="submit" id="register_submit" class="btn btn-primary mt-3">Submit</button>
             </form>
         </div>
 
