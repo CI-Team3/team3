@@ -74,3 +74,16 @@ pip3 install pymongo
 pip3 install Flask-PyMongo
 pip3 install Werkzeug
 python3 -m pip install "pymongo[srv]"
+
+
+
+============================================
+====Pretty git log in one line
+git log --pretty=oneline {source: https://ma.ttias.be/pretty-git-log-in-one-line/}
+
+====The output is indented to show branch-points and merges.
+git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+====add a git alias so you don’t have to remember the entire syntax
+git config --global alias.logline "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+git logline
