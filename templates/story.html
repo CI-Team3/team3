@@ -13,78 +13,40 @@
     {#    block with story items #}
     <div class="row">
         <div class="col-12">
+
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                    {% for story in stories %}
+                        {% if loop.index == 1 %}
+                            <li data-target="#carouselExampleIndicators" data-slide-to="{{ loop.index }}" class="active"></li>
+                        {%else%}
+                            <li data-target="#carouselExampleIndicators" data-slide-to="{{ loop.index }}"></li>
+                        {% endif %} 
+                    {% endfor %}
+
                 </ol>
                 <div class="carousel-inner">
-                    <div class="carousel-item  active">
-                        <div class="item-container">
-                            <h5>Title1</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, deserunt enim et
-                                eveniet
-                                excepturi facilis harum ipsam iste nobis officiis optio, possimus quas quo quos ratione
-                                suscipit
-                                voluptates? Consequatur, sunt.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item  ">
-                        <div class="item-container">
-                            <h5>Title1</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, deserunt enim et
-                                eveniet
-                                excepturi facilis harum ipsam iste nobis officiis optio, possimus quas quo quos ratione
-                                suscipit
-                                voluptates? Consequatur, sunt.</p>
+                    {% for story in stories %}
+                        {% if loop.index == 1 %}
+                            <div class="carousel-item  active">
 
-                        </div>
-                    </div>
-                    <div class="carousel-item  ">
-                        <div class="item-container">
-                            <h5>Title2</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, deserunt enim et
-                                eveniet
-                                excepturi facilis harum ipsam iste nobis officiis optio, possimus quas quo quos ratione
-                                suscipit
-                                voluptates? Consequatur, sunt.</p>
+                                <div class="item-container">
+                                    <h5>{{ story.title }}</h5>
+                                    <p>{{ story.story }}</p>
+                                    <span>{{ story.created_by }}</span>
+                                </div>
+                            </div>
+                        {% else %}
+                            <div class="carousel-item">
+                                <div class="item-container">
+                                    <h5>{{ story.title }}</h5>
+                                    <p>{{ story.story }}</p>
+                                    <span>{{ story.created_by }}</span>
+                                </div>
+                            </div>
+                        {% endif %}
+                {% endfor %}
 
-                        </div>
-                    </div>
-                    <div class="carousel-item ">
-                        <div class="item-container">
-                            <h5>Title3</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, deserunt enim et
-                                eveniet
-                                excepturi facilis harum ipsam iste nobis officiis optio, possimus quas quo quos ratione
-                                suscipit
-                                voluptates? Consequatur, sunt.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item ">
-                        <div class="item-container">
-                            <h5>Title4</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, deserunt enim et
-                                eveniet
-                                excepturi facilis harum ipsam iste nobis officiis optio, possimus quas quo quos ratione
-                                suscipit
-                                voluptates? Consequatur, sunt.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item ">
-                        <div class="item-container">
-                            <h5>Title5</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, deserunt enim et
-                                eveniet
-                                excepturi facilis harum ipsam iste nobis officiis optio, possimus quas quo quos ratione
-                                suscipit
-                                voluptates? Consequatur, sunt.</p>
-                        </div>
-                    </div>
 
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>

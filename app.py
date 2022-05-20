@@ -15,7 +15,7 @@ app = Flask(__name__)
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 # added this line to refresh templates when making changes - to be removed if not needed, pls
-app.config["TEMPLATES_AUTO_RELOAD"] = True 
+app.config["TEMPLATES_AUTO_RELOAD"] = True
 app.secret_key = os.environ.get("SECRET_KEY")
 
 app.jinja_env.add_extension('jinja2.ext.loopcontrols')
@@ -25,7 +25,6 @@ mongo = PyMongo(app)
 
 @app.route("/")
 def index():
-
     # for i in animation_info:
     #     mongo.db.animation.insert_one(i)
 
@@ -61,7 +60,17 @@ def register():
 
 @app.route("/story")
 def story():
-    return render_template("story.html")
+    # example = {
+    #     'title': "title1",
+    #     'story': "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, deserunt enim et eveniet excepturi facilis harum ipsam iste nobis officiis optio, possimus quas quo quos ratione suscipit voluptates? Consequatur, sunt.",
+    #     'created_by': 'user1'
+    # }
+    context = list(mongo.db.stories.find())
+
+    # for i in range(0, 6):
+    #     mongo.db.stories.insert_one(example)
+
+    return render_template("story.html", stories=context)
 
 
 @app.route("/login", methods=["GET", "POST"])
