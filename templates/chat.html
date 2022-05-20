@@ -9,7 +9,7 @@
         {% for message in chat %}
             <li class="list-group-item mt-1">
                 <span>{{ message.username }}</span> said: <span>{{ message.text }}</span>
-                {% if session.user == "coder" %}
+                {% if session.user == "coder" or session.user == 'alex' %}
                     <a href="{{ url_for('chat_remove_message', message_id=message._id) }}">Remove comment</a>
                 {% endif %}
             </li>

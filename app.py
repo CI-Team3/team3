@@ -60,17 +60,22 @@ def register():
 
 @app.route("/story")
 def story():
-    # example = {
-    #     'title': "title1",
-    #     'story': "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, deserunt enim et eveniet excepturi facilis harum ipsam iste nobis officiis optio, possimus quas quo quos ratione suscipit voluptates? Consequatur, sunt.",
-    #     'created_by': 'user1'
-    # }
     context = list(mongo.db.stories.find())
-
-    # for i in range(0, 6):
-    #     mongo.db.stories.insert_one(example)
-
     return render_template("story.html", stories=context)
+
+
+@app.route("/story/add", methods=['POST', ])
+def story_add():
+    if request.method == 'POST':
+        if "user" in session:
+            submit = {
+                'title': request.form.get('title'),
+                'story': request.form.get('story'),
+                'created_by': session['user']
+            }
+            mongo.db.chat.insert_one(submit)
+            return redirect(url_for('story'))
+    return redirect(url_for('story'))
 
 
 @app.route("/chat")
@@ -88,16 +93,17 @@ def chat_add():
         }
         print(submit)
         mongo.db.chat.insert_one(submit)
-        return redirect(url_for('chat_display'))
-    chat = list(mongo.db.chat.find())
-    return render_template("chat.html", chat=chat)
+        return redirect(url_for('chat'))
+    chat_messages = list(mongo.db.chat.find())
+    return render_template("chat.html", chat=chat_messages)
 
 
-@app.route("/chat/delete")
+@app.route("/chat/delete/<message_id>")
 def chat_remove_message(message_id):
-    if session['user'] == 'coder':
+    print(message_id)
+    if session['user'] == 'coder' or session['user'] == 'alex':
         mongo.db.chat.delete_one({'_id': ObjectId(message_id)})
-    return redirect(url_for('chat_display'))
+    return redirect(url_for('chat'))
 
 
 @app.route("/login", methods=["GET", "POST"])
