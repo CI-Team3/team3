@@ -14,6 +14,8 @@ app = Flask(__name__)
 
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
+# added this line to refresh templates when making changes - to be removed if not needed, pls
+app.config["TEMPLATES_AUTO_RELOAD"] = True 
 app.secret_key = os.environ.get("SECRET_KEY")
 
 app.jinja_env.add_extension('jinja2.ext.loopcontrols')
