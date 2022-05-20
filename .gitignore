@@ -11,6 +11,7 @@ node_modules/
 examples
 images_sources.txt
 venv
+.venv
 .idea
 .idea/*
 env.py

@@ -1,0 +1,20 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <Marc Picornell> -- <Front End Web Developer> -- <@marcpicornell>
+    <Alexander Grid> -- <Back End Developer> -- <@>
+    <Florin Maracine> -- <Front End Web Developer> -- <@phloreen>
+    <Tinashe> -- <> -- <@>
+
+
+# THANKS
+
+    Code Institute
+    Trust in SODA
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, Bootstrap 4, Flask, Python
+    
