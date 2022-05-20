@@ -76,11 +76,17 @@
             <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="#">Photos</a>
             <a class="nav-item nav-link" href="#">My Story</a>
-            <a class="nav-item nav-link" href="{{ url_for('login') }}">Sign In</a>
+            <a class="nav-item nav-link" href="{{ url_for('chat') }}">Chat</a>
+            <a class="nav-item nav-link" href="{{ url_for('story') }}">Stories</a>
+            {% if session.user %}
+
             <a class="nav-item nav-link" href="{{ url_for('profile') }}">Profile</a>
             <!-- I don't know how to update the menu options if user is logged in or not -->
             <a class="nav-item nav-link" href="{{  url_for('logout') }}">Sign Out</a>
+            {% else %}
+            <a class="nav-item nav-link" href="{{ url_for('login') }}">Sign In</a>
             <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
+            {% endif %}
             <a class="nav-item nav-link disabled" href="#">ReConnect</a>
         </div>
     </div>
