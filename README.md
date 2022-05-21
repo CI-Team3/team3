@@ -1,11 +1,12 @@
-# team3
+# ReConnect
 <h1 align="center">TEAM 3 - Hackathon May 2022 #19 project</h1>
 
-Repo on GitHub is <a href="https://github.com/CI-Team3/team3" target="_blank" rel="noopener">HERE</a>
+<h3> Link to GitHub repository <a href="https://github.com/CI-Team3/team3" target="_blank" rel="noopener">HERE</a></h3>
 
-# Link to deployed site <a href="https://ci-reconnect.herokuapp.com/" target="_blank" rel="noopener">HERE</a>
+<h3> Link to deployed site <a href="https://ci-reconnect.herokuapp.com/" target="_blank" rel="noopener">HERE</a></h3>
+
 ==========================================================
-1. [**The idea**](#idea)
+1. [**Project overview**](#project-overview)
 1. [**UX Design**](#ux-design)
     * [**The Strategy and the Scope Plane**](#the-strategy-and-the-scope-plane**)
       * [***Target Audience***](#target-audience)
@@ -50,9 +51,10 @@ Some people experience difficulties in connecting with other people, particularl
 The site features full registration, log-in and log-out functionality with authentication built into both the front and back end to facilitate this.
 
 
+
 # Credits
 
-## Code:
+## Code Snippets:
 -   [Bootstrap](https://www.codegrepper.com/code-examples/whatever/bootstrap+4+navbar+cdn): links source
 -   [Bootstrap](https://getbootstrap.com/docs/4.0/components/navbar/):  Collapsible  navigation bar
 -   [Bootstrap](https://mdbootstrap.com/docs/standard/navigation/footer/): Footer section source
@@ -69,4 +71,4 @@ The site features full registration, log-in and log-out functionality with authe
 =====================================================
 
 
-[TOP OF THE PAGE](#team3)
+[TOP OF THE PAGE](#reconnect)
