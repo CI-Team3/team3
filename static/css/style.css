@@ -1,13 +1,12 @@
-html    { 
-    background: url("/static/assets/img/background.svg") no-repeat center center fixed; 
+html    {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-blend-mode: lighten;
-    background-color: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.9) url("/static/assets/img/background.svg") no-repeat fixed center center;
     z-index: -1;
-    
+     /*    Free SVG Background by <a target="_blank" href="https://bgjar.com">BGJar</a>*/
     }
 body {
     background-color:transparent;
@@ -20,8 +19,8 @@ body {
     height: 100%; */
  /*   /* width: 100vw;
     height: 100vh; */
-    /*    Free SVG Background by <a target="_blank" href="https://bgjar.com">BGJar</a>*/
-*/
+
+
 }
 
 .carousel {
