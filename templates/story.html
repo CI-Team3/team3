@@ -59,4 +59,19 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col ">
+            <div class="add-new-story-container">
+                <form action="{{ url_for('story_add') }}" method="post">
+                    <label for="title">Story title</label>
+                    <input type="text" name="title" id="title">
+                    <label for="story">Share your story</label>
+                    <textarea name="story" id="story" rows="5" cols="80"></textarea>
+                    <input type="hidden" value="{{ session.user }}" name="created_by">
+                    <button class="btn btn-primary">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
 {% endblock %}

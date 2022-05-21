@@ -69,7 +69,7 @@ def register():
 @app.route("/story")
 def story():
     context = list(mongo.db.stories.find())
-    return render_template("story.html", stories=context)
+    return render_template("story.html", stories=context[::-1])
 
 
 @app.route("/story/add", methods=['POST', ])
@@ -81,7 +81,8 @@ def story_add():
                 'story': request.form.get('story'),
                 'created_by': session['user']
             }
-            mongo.db.chat.insert_one(submit)
+            print(submit)
+            mongo.db.stories.insert_one(submit)
             return redirect(url_for('story'))
     return redirect(url_for('story'))
 
@@ -99,7 +100,7 @@ def chat_add():
             'username': request.form.get('username'),
             'text': request.form.get("text-field")
         }
-        print(submit)
+
         mongo.db.chat.insert_one(submit)
         return redirect(url_for('chat'))
     chat_messages = list(mongo.db.chat.find())
@@ -108,7 +109,7 @@ def chat_add():
 
 @app.route("/chat/delete/<message_id>")
 def chat_remove_message(message_id):
-    print(message_id)
+
     if session['user'] == 'coder' or session['user'] == 'alex':
         mongo.db.chat.delete_one({'_id': ObjectId(message_id)})
     return redirect(url_for('chat'))
