@@ -17,7 +17,6 @@
 
 .carousel {
     height: 300px;
-
 }
 
 .carousel-control-prev-icon {
@@ -48,7 +47,9 @@
 /* HEADER */
 
 /* CONTENT */
-
+.container {
+margin-bottom: 60px;
+}
 /* FOOTER */
 footer {
     position: absolute;
