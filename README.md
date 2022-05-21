@@ -3,6 +3,7 @@
 
 Repo on GitHub is <a href="https://github.com/CI-Team3/team3" target="_blank" rel="noopener">HERE</a>
 
+# Link to deployed site <a href="https://ci-reconnect.herokuapp.com/" target="_blank" rel="noopener">HERE</a>
 
 - [Credits](#credits)
   + [Code](#code)

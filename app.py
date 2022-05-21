@@ -31,6 +31,14 @@ def index():
     return render_template("index.html", index_page=True)
 
 
+@app.route("/photos")
+def photos():
+    # for i in animation_info:
+    #     mongo.db.animation.insert_one(i)
+
+    return render_template("photos.html")
+
+
 # ==========handle login logout register======================================
 @app.route("/register", methods=["GET", "POST"])
 def register():
@@ -81,7 +89,7 @@ def story_add():
 @app.route("/chat")
 def chat():
     chat_messages = list(mongo.db.chat.find())
-    return render_template("chat.html", chat=chat_messages)
+    return render_template("chat.html", chat=chat_messages[::-1])
 
 
 @app.route("/chat/add", methods=['POST', ])
