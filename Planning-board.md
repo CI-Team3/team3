@@ -31,14 +31,16 @@ anyone can add their own
         - user stories ???
 2. Accesibility - color blind filters?
 3. App features
+ 
     3.1 - create new post
+
     3.2 - views others' posts
             - showcase posted photos
             - read older posts
     3.3 - CRUD the posts ???
-4. Deployment
+5. Deployment
     - Flask/Django deployment ???
     - DB MongoDB
-5. Testing
-6. Bugs ???
-7. Credits
+6. Testing
+7. Bugs ???
+8. Credits

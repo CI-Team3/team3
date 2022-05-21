@@ -12,7 +12,7 @@ Repo on GitHub is <a href="https://github.com/CI-Team3/team3" target="_blank" re
 
 
 # Project overview
-ReConnect is an evidence-informed approach to supporting people to connect with others
+ReConnect is a website supporting people to connect with others
 
 Positive social connections are important for our physical and mental wellbeing. They can provide emotional support, practical assistance, information and a sense of belonging.
 
