@@ -81,7 +81,7 @@ def story_add():
 @app.route("/chat")
 def chat():
     chat_messages = list(mongo.db.chat.find())
-    return render_template("chat.html", chat=chat_messages)
+    return render_template("chat.html", chat=chat_messages[::-1])
 
 
 @app.route("/chat/add", methods=['POST', ])

@@ -33,6 +33,20 @@
 /* CONTENT */
 
 /* FOOTER */
-
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
 /* UTILITIES */
 
+/*Chat page*/
+.chat-container {
+    max-height: 50vh;
+}
+
+.chat-wrapper,
+.submit-message-container {
+    border: 1px solid black;
+}
