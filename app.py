@@ -72,6 +72,14 @@ def story():
     return render_template("story.html", stories=context[::-1])
 
 
+@app.route("/my_story")
+def my_story():
+    context = list(mongo.db.stories.find(
+        {"created_by": {'$eq': session['user']}}))
+
+    return render_template("my_story.html", stories=context[::-1])
+
+
 @app.route("/story/add", methods=['POST', ])
 def story_add():
     if request.method == 'POST':
@@ -84,6 +92,15 @@ def story_add():
             print(submit)
             mongo.db.stories.insert_one(submit)
             return redirect(url_for('story'))
+    return redirect(url_for('story'))
+
+
+@app.route("/story/delete/<story_id>")
+def story_delete(story_id):
+    if 'user' in session:
+        # need more validation if user own this story and allowed to delete it
+        mongo.db.stories.delete_one({'_id': ObjectId(story_id)})
+        return redirect(url_for('story'))
     return redirect(url_for('story'))
 
 

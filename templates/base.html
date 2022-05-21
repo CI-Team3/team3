@@ -72,7 +72,7 @@
             <!-- The (current) should be updated for the right page -->
             <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="{{ url_for('photos') }}">Photos</a>
-            <a class="nav-item nav-link" href="#">My Story</a>
+            <a class="nav-item nav-link" href="{{ url_for('my_story') }}">My Story</a>
             <a class="nav-item nav-link" href="{{ url_for('chat') }}">Chat</a>
             <a class="nav-item nav-link" href="{{ url_for('story') }}">Stories</a>
             {% if session.user %}
