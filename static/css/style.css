@@ -1,3 +1,15 @@
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-image: url("/static/assets/img/background.svg");
+    /*    Free SVG Background by <a target="_blank" href="https://bgjar.com">BGJar</a>*/
+}
+
 .carousel {
     height: 300px;
 
@@ -39,6 +51,7 @@ footer {
     left: 0;
     width: 100%;
 }
+
 /* UTILITIES */
 
 /*Chat page*/
@@ -46,7 +59,20 @@ footer {
     max-height: 50vh;
 }
 
-.chat-wrapper,
-.submit-message-container {
+.list-group-item {
+    border: 0;
+}
+
+.chat-wrapper {
     border: 1px solid black;
 }
+
+.text-align_end {
+    text-align: end;
+}
+
+.submit-message-container {
+    display: flex;
+    justify-content: center;
+}
+

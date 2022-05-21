@@ -21,7 +21,7 @@
                             <li data-target="#carouselExampleIndicators" data-slide-to="{{ loop.index }}" class="active"></li>
                         {%else%}
                             <li data-target="#carouselExampleIndicators" data-slide-to="{{ loop.index }}"></li>
-                        {% endif %} 
+                        {% endif %}
                     {% endfor %}
 
                 </ol>
@@ -29,7 +29,6 @@
                     {% for story in stories %}
                         {% if loop.index == 1 %}
                             <div class="carousel-item  active">
-
                                 <div class="item-container">
                                     <h5>{{ story.title }}</h5>
                                     <p>{{ story.story }}</p>

@@ -29,6 +29,8 @@
             crossorigin="anonymous"
     ></script>
 
+
+
     <link
             rel="stylesheet"
             href="{{ url_for('static', filename='css/style.css') }}"
@@ -69,7 +71,7 @@
         <div class="navbar-nav">
             <!-- The (current) should be updated for the right page -->
             <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Photos</a>
+            <a class="nav-item nav-link" href="{{ url_for('photos') }}">Photos</a>
             <a class="nav-item nav-link" href="#">My Story</a>
             <a class="nav-item nav-link" href="{{ url_for('chat') }}">Chat</a>
             <a class="nav-item nav-link" href="{{ url_for('story') }}">Stories</a>
@@ -89,6 +91,7 @@
 <!-- CONTENT SECTION -->
 
 <div class="content-container container">
+<div class="background"></div>
     {% block content %} {% endblock %}
 </div>
 
