@@ -18,8 +18,9 @@
                 <ol class="carousel-indicators">
                     {% for story in stories %}
                         {% if loop.index == 1 %}
-                            <li data-target="#carouselExampleIndicators" data-slide-to="{{ loop.index }}" class="active"></li>
-                        {%else%}
+                            <li data-target="#carouselExampleIndicators" data-slide-to="{{ loop.index }}"
+                                class="active"></li>
+                        {% else %}
                             <li data-target="#carouselExampleIndicators" data-slide-to="{{ loop.index }}"></li>
                         {% endif %}
                     {% endfor %}
@@ -44,7 +45,7 @@
                                 </div>
                             </div>
                         {% endif %}
-                {% endfor %}
+                    {% endfor %}
 
 
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

@@ -43,7 +43,7 @@ def photos():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if "user" in session:
-        return redirect(url_for('profile'))
+        return redirect(url_for('stories'))
     if request.method == "POST":
         # check if username already exists in db
         existing_user = mongo.db.users.find_one(
@@ -135,7 +135,7 @@ def chat_remove_message(message_id):
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if "user" in session:
-        return redirect(url_for('profile'))
+        return redirect(url_for('stories'))
     if request.method == "POST":
         # check if username exists in db
         existing_user = mongo.db.users.find_one(

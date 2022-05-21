@@ -8,28 +8,31 @@
     </div>
     {#    block with carousel items#}
     <div class="row">
-        <div class="col-12"></div>
+        <div class="col-12">
+            <h2>Your memories</h2>
+        </div>
     </div>
     {#    block with story items #}
     <div class="row">
         <div class="col-12">
             <ul>
-            {% if stories %}
-                {% for story in stories %}
-                    <li>
-                        {{ story.title }}
-                        <br>
-                        {{ story.story }}
-                        <a href="{{ url_for('story_delete', story_id=story._id) }}" class="btn btn-outline-danger" data-toggle="tooltip" data-placement="top"
-                           title="Delete">
-                            <i class="fas fa-times"></i>
-                            <span class="visually-hidden">Delete story</span>
-                        </a>
-                    </li>
-                {% endfor %}
-            {% else %}
-            <li>No records found</li>
-            {% endif %}
+                {% if stories %}
+                    {% for story in stories %}
+                        <li>
+                            {{ story.title }}
+                            <br>
+                            {{ story.story }}
+                            <a href="{{ url_for('story_delete', story_id=story._id) }}" class="btn btn-outline-danger"
+                               data-toggle="tooltip" data-placement="top"
+                               title="Delete">
+                                <i class="fas fa-times"></i>
+                                <span class="visually-hidden">Delete story</span>
+                            </a>
+                        </li>
+                    {% endfor %}
+                {% else %}
+                    <li>No records found</li>
+                {% endif %}
             </ul>
         </div>
     </div>
