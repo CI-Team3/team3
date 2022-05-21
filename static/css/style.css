@@ -4,9 +4,14 @@ html    {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-blend-mode: lighten;
+    background-color: rgba(0, 0, 0, 0.9);
     z-index: -1;
+    
     }
-
+body {
+    background-color:transparent;
+}
 .background {
 /*    position: absolute;
     top: 0;
