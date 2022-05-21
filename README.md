@@ -4,11 +4,38 @@
 Repo on GitHub is <a href="https://github.com/CI-Team3/team3" target="_blank" rel="noopener">HERE</a>
 
 # Link to deployed site <a href="https://ci-reconnect.herokuapp.com/" target="_blank" rel="noopener">HERE</a>
-
-- [Credits](#credits)
-  + [Code](#code)
-  + [Media](#media)
-
+==========================================================
+1. [**The idea**](#idea)
+1. [**UX Design**](#ux-design)
+    * [**The Strategy and the Scope Plane**](#the-strategy-and-the-scope-plane**)
+      * [***Target Audience***](#target-audience)
+    * [**The Structure Plane**](#the-structure-plane)
+      * [***User Accessibility***](#user-accessibility)
+      * [***Website Accomplishments***](#website-accomplishments)
+1. [**UI Design**](#ui-design)
+    * [**Wireframes**](#wireframes)
+    * [**Common Features**](#common-features)
+      * [***Colors***](#colors)
+      * [***Navigation bar***](#navigation-bar)
+      * [***Footer area***](#footer)
+    * [**Features**](#features)
+      * [**Home Page**](#Home-page)
+      * [**Stories**](#stories)
+      * [**Chat**](#chat)
+      * [**Photos Page**](#photos-page)
+      * [**My Story**](#my-story)
+      * [**Account**](#Account)
+        * [***Sign In***](#sign-in)
+        * [***Sign Out***](#sign-out)
+        * [***Register***](#Register)
+    * [**Footer**](#footer)
+1. [**Testing and Debugging**](#testing-and-debugging)
+1. [**Deployment**](#deployment)
+1. [**Credits**](#credits)
+    * [**Code snippets**](#code-snippets)
+    * [**Media**](#media)
+    
+==========================================================
 
 
 # Project overview
@@ -37,6 +64,9 @@ The site features full registration, log-in and log-out functionality with authe
 
 
 
+================================================================================
+
+=====================================================
 
 
 [TOP OF THE PAGE](#team3)
