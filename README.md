@@ -8,7 +8,7 @@
 ==========================================================
 1. [**Project overview**](#project-overview)
 1. [**UX Design**](#ux-design)
-    * [**The Strategy and the Scope Plane**](#the-strategy-and-the-scope-plane**)
+    * [**The Strategy and the Scope Plane**](#strategy-and-scope**)
       * [***Target Audience***](#target-audience)
     * [**The Structure Plane**](#the-structure-plane)
       * [***User Accessibility***](#user-accessibility)
@@ -19,7 +19,7 @@
       * [***Colors***](#colors)
       * [***Navigation bar***](#navigation-bar)
       * [***Footer area***](#footer)
-    * [**Features**](#features)
+    * [**Features**](#site-features)
       * [**Home Page**](#Home-page)
       * [**Stories**](#stories)
       * [**Chat**](#chat)
@@ -44,8 +44,27 @@ ReConnect is a website supporting people to connect with others
 
 Positive social connections are important for our physical and mental wellbeing. They can provide emotional support, practical assistance, information and a sense of belonging.
 
-Some people experience difficulties in connecting with other people, particularly when experiencing mental health problems or if they are excluded from the normal activities of society.
+# UX Design
+  ## Strategy and Scope
+    - We want to offer an online supportive group through a social media application for psychological effects of pandemic.
+    ### Target Audience
+      - Some people experience difficulties in connecting with other people, particularly when experiencing mental health problems or if they are excluded from the normal activities of society.
+  ## The Structure Plane
+    - The title of this project is "ReConnect" and as it's suggesting is about RE - CONNECTing people by sharing with each other our experiences through and after the pandemic.
+    - At the top of the page there is a navigation menu-bar, which provides link for each section of the website.
+    - Some areas are accesible only to logged-in users. You need to be logged-in to be able to access live Chat functions, Account details, My Story section.
+  ## Skeleton Plane
+    - Develop Page Structure & Organize Interactions
+  ## Surface Plane
+    - Design Graphic User Interface
 
+
+
+
+
+
+
+# UI Design
 ## Site features
 
 The site features full registration, log-in and log-out functionality with authentication built into both the front and back end to facilitate this.
