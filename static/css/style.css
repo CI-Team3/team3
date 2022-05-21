@@ -7,23 +7,17 @@ html    {
     z-index: -1;
     }
 
-/* .background {
-    position: absolute;
+.background {
+/*    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    /* width: 100vw;
+    height: 100%; */
+ /*   /* width: 100vw;
     height: 100vh; */
     /*    Free SVG Background by <a target="_blank" href="https://bgjar.com">BGJar</a>*/
-    background-image: url("/static/assets/img/background.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: -1;
-}
 */
-
+}
 
 .carousel {
     height: 300px;
