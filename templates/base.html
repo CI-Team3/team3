@@ -4,8 +4,7 @@
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-
+        <!-- Missing META for SEO -->
         <!-- Boostrap 4 CSS -->
         <link
                 rel="stylesheet"
@@ -19,15 +18,16 @@
                 integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
                 crossorigin="anonymous"
         />
-
-
-
         <link
                 rel="stylesheet"
                 href="{{ url_for('static', filename='css/style.css') }}"
                 type="text/css"
         />
-        <link rel="shortcut icon" type="image/jpg" href="{{ url_for('static', filename='assets/favicon/favicon.ico') }}"/>
+        <link
+                rel="shortcut icon" type="image/jpg"
+                href="{{ url_for('static', filename='assets/favicon/favicon.ico') }}"
+        />
+        <!-- End of Bootstrap 4 CSS -->
         <title>ReConnect</title>
     </head>
     <body>
@@ -82,8 +82,7 @@
                 {% block content %} {% endblock %}
             
             </div>
-        </main>
-        
+        </main>  
         <footer class="bg-light text-center text-lg-start fixed-bottom">
             <!-- FOOTER -->
             <!-- Sourced from: https://mdbootstrap.com/docs/standard/navigation/footer/ -->
@@ -93,12 +92,13 @@
             </div>
         </footer>
             <!-- Boostrap JS -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script 
+                    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+            </script>
             <script
-
                     src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
                     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-                    crossorigin="anonymous"
-            ></script>
+                    crossorigin="anonymous">
+            </script>
     </body>
 </html>
