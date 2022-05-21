@@ -18,8 +18,9 @@
                 <ol class="carousel-indicators">
                     {% for story in stories %}
                         {% if loop.index == 1 %}
-                            <li data-target="#carouselExampleIndicators" data-slide-to="{{ loop.index }}" class="active"></li>
-                        {%else%}
+                            <li data-target="#carouselExampleIndicators" data-slide-to="{{ loop.index }}"
+                                class="active"></li>
+                        {% else %}
                             <li data-target="#carouselExampleIndicators" data-slide-to="{{ loop.index }}"></li>
                         {% endif %}
                     {% endfor %}
@@ -44,7 +45,7 @@
                                 </div>
                             </div>
                         {% endif %}
-                {% endfor %}
+                    {% endfor %}
 
 
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -56,6 +57,21 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col ">
+            <div class="add-new-story-container">
+                <form action="{{ url_for('story_add') }}" method="post">
+                    <label for="title">Story title</label>
+                    <input type="text" name="title" id="title">
+                    <label for="story">Share your story</label>
+                    <textarea name="story" id="story" rows="5" cols="80"></textarea>
+                    <input type="hidden" value="{{ session.user }}" name="created_by">
+                    <button class="btn btn-primary">Submit</button>
+
+                </form>
             </div>
         </div>
     </div>

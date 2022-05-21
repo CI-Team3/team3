@@ -30,7 +30,6 @@
     ></script>
 
 
-
     <link
             rel="stylesheet"
             href="{{ url_for('static', filename='css/style.css') }}"
@@ -72,17 +71,16 @@
             <!-- The (current) should be updated for the right page -->
             <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="{{ url_for('photos') }}">Photos</a>
-            <a class="nav-item nav-link" href="#">My Story</a>
+            <a class="nav-item nav-link" href="{{ url_for('my_story') }}">My Story</a>
             <a class="nav-item nav-link" href="{{ url_for('chat') }}">Chat</a>
             <a class="nav-item nav-link" href="{{ url_for('story') }}">Stories</a>
             {% if session.user %}
 
-            <a class="nav-item nav-link" href="{{ url_for('profile') }}">Profile</a>
-            <!-- I don't know how to update the menu options if user is logged in or not -->
-            <a class="nav-item nav-link" href="{{  url_for('logout') }}">Sign Out</a>
+                <!-- I don't know how to update the menu options if user is logged in or not -->
+                <a class="nav-item nav-link" href="{{ url_for('logout') }}">Sign Out</a>
             {% else %}
-            <a class="nav-item nav-link" href="{{ url_for('login') }}">Sign In</a>
-            <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
+                <a class="nav-item nav-link" href="{{ url_for('login') }}">Sign In</a>
+                <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
             {% endif %}
             <a class="nav-item nav-link disabled" href="#">ReConnect</a>
         </div>
@@ -91,7 +89,7 @@
 <!-- CONTENT SECTION -->
 
 <div class="content-container container">
-<div class="background"></div>
+    <div class="background"></div>
     {% block content %} {% endblock %}
 </div>
 

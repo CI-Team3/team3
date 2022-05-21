@@ -8,27 +8,29 @@
             <ul class="list-group list-group-flush mt-3">
                 {% for message in chat %}
                     {% if session.user == message.username %}
-                    <li class="list-group-item mt-1 text-align_end">
-                        <span>{{ message.text }}</span>
-                        <span class="badge badge-secondary">{{ message.username }}</span>
-                        {% if session.user == "coder" or session.user == 'alex' %}
-                            <a href="{{ url_for('chat_remove_message', message_id=message._id) }}">Remove comment</a>
-                        {% endif %}
-                    </li>
+                        <li class="list-group-item mt-1 text-align_end">
+                            <span>{{ message.text }}</span>
+                            <span class="badge badge-secondary">{{ message.username }}</span>
+                            {% if session.user == "coder" or session.user == 'alex' %}
+                                <a href="{{ url_for('chat_remove_message', message_id=message._id) }}">Remove
+                                    comment</a>
+                            {% endif %}
+                        </li>
                     {% else %}
-                    <li class="list-group-item mt-1">
-                        <span class="badge badge-secondary">{{ message.username }}</span>
-                        <span>{{ message.text }}</span>
-                        {% if session.user == "coder" or session.user == 'alex' %}
-                            <a href="{{ url_for('chat_remove_message', message_id=message._id) }}">Remove comment</a>
-                        {% endif %}
-                    </li>
+                        <li class="list-group-item mt-1">
+                            <span class="badge badge-secondary">{{ message.username }}</span>
+                            <span>{{ message.text }}</span>
+                            {% if session.user == "coder" or session.user == 'alex' %}
+                                <a href="{{ url_for('chat_remove_message', message_id=message._id) }}">Remove
+                                    comment</a>
+                            {% endif %}
+                        </li>
                     {% endif %}
                 {% endfor %}
 
             </ul>
         </div>
-        <div class="submit-message-container mt-3">
+        <div class=" mt-3">
             {% if session.user %}
                 <form action="{{ url_for('chat_add') }}" method="post">
                     <label for="username"></label>
