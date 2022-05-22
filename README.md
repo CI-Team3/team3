@@ -35,6 +35,7 @@
 1. [**Credits**](#credits)
     * [**Code snippets**](#code-snippets)
     * [**Media**](#media)
+1. [**Future releases**](#upcoming-features)
     
 ==========================================================
 
@@ -57,6 +58,12 @@ Positive social connections are important for our physical and mental wellbeing.
     - Develop Page Structure & Organize Interactions
   ## Surface Plane
     - Design Graphic User Interface
+   ## User Stories
+    --> main points: anxiety, depression, stress, fear, lack of social support
+    --> target: people who experinced difficulties 
+    - As an user I want to use an online application to chat with my friends or family, to reduce my postpartum anxiety/depression caused by the social distancing rule during the pandemic.
+    - As an introverted user I'd like to express to my family my feelings, so that I'll receive their support.
+
 
 
 
@@ -104,18 +111,18 @@ heroku git:remote -a earthlings-hackathon
 
 ## Media:
 -   [Brand icon](https://www.svgrepo.com/show/95704/global-connect.svg): Brand *.svg image source
+-   [Background image](https://bgjar.com): Free SVG Background by <a target="_blank" href="https://bgjar.com">BGJar</a>
 
-
+# Upcoming Features
+  Future releases will include:
+  - Option for user to upload a picture for his story
+  - Like button for other stories in the feed
+  - Option for user to delete its own account
 
 
 
 ================================================================================
-================================================================================
-================================================================================
-================================================================================
-================================================================================
 
-=====================================================
 
 
 [TOP OF THE PAGE](#reconnect)

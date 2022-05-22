@@ -5,13 +5,15 @@ html    {
     background-size: cover;
     background-blend-mode: lighten;
     width: 100%;
-    background: rgba(0, 0, 0, 0.9) url("/static/assets/img/background.svg") no-repeat fixed center center;
+    background: rgba(0, 0, 0, 0.7) url("/static/assets/img/background.svg") no-repeat fixed center center;
     z-index: -1;
      /*    Free SVG Background by <a target="_blank" href="https://bgjar.com">BGJar</a>*/
 }
 
 body {
     background-color:transparent;
+    color: aliceblue;
+    font-weight: 300;
 }
 
 .carousel {
@@ -24,11 +26,6 @@ body {
     height: 48px;
 }
 
-.carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-    width: 30px;
-    height: 48px;
-}
 
 .item-container {
     width: 80%;
@@ -62,10 +59,7 @@ body {
 .center-align {
     text-align: center;
 }
-/* CHAT */
-.form-align {
-    /* need to align the chat's text-field and submit-send buton*/
-}
+
 
 
 /* FOOTER */
@@ -78,17 +72,20 @@ footer {
 
 /* UTILITIES */
 
-/*Chat page*/
+/* CHAT page */
+.form-align {
+    justify-content: center;
+}
+.chat-text-color {
+    color: black;
+}
+
 .chat-container {
-    max-height: 50vh;
+    max-height: 70vh;
 }
 
 .list-group-item {
     border: 0;
-}
-
-.chat-wrapper {
-    border: 1px solid black;
 }
 
 .text-align_end {
@@ -99,7 +96,6 @@ footer {
     display: flex;
     justify-content: center;
 }
-
 
 /* MEDIA QUERIES */
 

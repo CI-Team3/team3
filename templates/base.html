@@ -37,11 +37,11 @@
             <!-- changed from LG to navbar-expand-SM so that the menu hides only when screen is < than 576px-->
 
             <nav class="navbar navbar-expand-sm navbar-light bg-light">
-                <nav class="navbar navbar-light bg-light">
-                    <a class="navbar-brand" href="#">
+                <div class="navbar navbar-light bg-light">
+                    <a class="navbar-brand" href="{{ url_for('index') }}">
                     <!-- We'll have to decide for a more fitted icon to use as brand icon -->
                     <img src="https://www.svgrepo.com/show/95704/global-connect.svg" width="30" height="30" fill="%23ff0000" class="d-inline-block align-top" alt="Navigation bar image">ReConnect</a>
-                </nav>
+                    </div>
                 <button
                         class="navbar-toggler"
                         type="button"
@@ -55,7 +55,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ml-auto mr-5">
                         <!-- The (current) should be updated for the right page -->
-                        <a class="nav-item nav-link text-nowrap active" href="/">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link text-nowrap active" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
                         <a class="nav-item nav-link text-nowrap" href="{{ url_for('photos') }}">Photos</a>
                     {% if session.user %}
                         <a class="nav-item nav-link text-nowrap" href="{{ url_for('my_story') }}">My Story</a>

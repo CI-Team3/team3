@@ -4,10 +4,10 @@
 
     <div class="chat-wrapper">
         <div class="chat-container overflow-auto">
-            <ul class="list-group list-group-flush mt-3">
+            <ul class="list-group list-group-flush chat-text-color">
                 {% for message in chat %}
                     {% if session.user == message.username %}
-                        <li class="list-group-item mt-1 text-align_end">
+                        <li class="list-group-item text-align_end">
                             <span>{{ message.text }}</span>
                             <span class="badge badge-secondary">{{ message.username }}</span>
                             {% if session.user == "coder" or session.user == 'alex' %}
@@ -16,7 +16,7 @@
                             {% endif %}
                         </li>
                     {% else %}
-                        <li class="list-group-item mt-1">
+                        <li class="list-group-item">
                             <span class="badge badge-secondary">{{ message.username }}</span>
                             <span>{{ message.text }}</span>
                             {% if session.user == "coder" or session.user == 'alex' %}
@@ -37,7 +37,7 @@
                         <input type="hidden" name="username" id="username" value="{{ session.user }}">
                         <label for="text-field">Your message</label>
                         <input type="text" name="text-field" id="text-field">
-                        <button class="btn btn-primary">submit</button>
+                        <button class="btn btn-primary ml-auto">submit</button>
                     </form>
                 {% else %}
                     <p>
