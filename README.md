@@ -58,6 +58,12 @@ Positive social connections are important for our physical and mental wellbeing.
     - Develop Page Structure & Organize Interactions
   ## Surface Plane
     - Design Graphic User Interface
+   ## User Stories
+    --> main points: anxiety, depression, stress, fear, lack of social support
+    --> target: people who experinced difficulties 
+    - As an user I want to use an online application to chat with my friends or family, to reduce my postpartum anxiety/depression caused by the social distancing rule during the pandemic.
+    - As an introverted user I'd like to express to my family my feelings, so that I'll receive their support.
+
 
 
 
@@ -115,12 +121,7 @@ heroku git:remote -a earthlings-hackathon
 
 
 ================================================================================
-================================================================================
-================================================================================
-================================================================================
-================================================================================
 
-=====================================================
 
 
 [TOP OF THE PAGE](#reconnect)
