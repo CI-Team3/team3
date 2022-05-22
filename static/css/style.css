@@ -7,20 +7,10 @@ html    {
     background: rgba(0, 0, 0, 0.9) url("/static/assets/img/background.svg") no-repeat fixed center center;
     z-index: -1;
      /*    Free SVG Background by <a target="_blank" href="https://bgjar.com">BGJar</a>*/
-    }
+}
+
 body {
     background-color:transparent;
-}
-.background {
-/*    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; */
- /*   /* width: 100vw;
-    height: 100vh; */
-
-
 }
 
 .carousel {
@@ -56,7 +46,13 @@ body {
 
 /* CONTENT */
 .container {
-margin-bottom: 60px;
+    /* this is needed not to overlap content section with footer area */
+    margin-bottom: 60px;
+}
+/* LOGIN */
+.forms-centering {
+    margin: 0 auto;
+    max-width: 70%;
 }
 /* FOOTER */
 footer {
@@ -90,3 +86,11 @@ footer {
     justify-content: center;
 }
 
+
+/* MEDIA QUERIES */
+@media (min-width: 976px) {
+    .forms-centering {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}

@@ -76,7 +76,11 @@ pip3 install Werkzeug
 python3 -m pip install "pymongo[srv]"
 
 
-
+Update python:
+python -m pip install --upgrade pip
+IF error"ERROR: Could not install packages due to an EnvironmentError: [WinError 5] Access is denied: 'c:\\python39\\lib\\site-packages\\pip-20.2.3.dist-info\\entry_points.txt' Consider using the `--user` option or check the permissions."
+USE
+python -m pip install --upgrade pip --user
 ============================================
 
 Pretty git log in one line
