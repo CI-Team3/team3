@@ -1,7 +1,42 @@
 {% extends "base.html" %}
 
 {% block content %}
+ <div class="row">
+        <div class="col-12">
+            <h2 class="center-align">Share your story</h2>
+        </div>
+    </div>
 
+    {#    block with carousel items#}
+    <div class="row mt-3">
+        <div class="col-12">
+            <div class="add-new-story-container">
+                <form action="{{ url_for('story_add') }}" method="post">
+                    <div class="row justify-content-center">
+                        <div class="col-2 offset-1">
+                            <label for="title">Story title</label>
+                        </div>
+                        <div class="col-9 mr-auto">
+                            <input type="text" name="title" id="title">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2 offset-1">
+                            <label for="story">Share your story</label>
+                        </div>
+                        <div class="col-9 mr-auto">
+                            <textarea name="story" id="story" rows="5" cols="80"></textarea>
+                            <input type="hidden" value="{{ session.user }}" name="created_by">
+                        </div>
+                    </div>
+                    <div class="col-9 offset-3 px-2">
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
     {#block with header image#}
     <div class="row">
         <div class="col-12"></div>
