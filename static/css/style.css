@@ -78,12 +78,11 @@ footer {
 /* UTILITIES */
 
 /* CHAT page */
+.form-align {
+    justify-content: center;
+}
 .chat-text-color {
     color: black;
-}
-
-.chat-wrapper {
-    border-style: none;
 }
 
 .chat-container {
@@ -92,10 +91,6 @@ footer {
 
 .list-group-item {
     border: 0;
-}
-
-.chat-wrapper {
-    border: 1px solid black;
 }
 
 .text-align_end {
@@ -107,7 +102,6 @@ footer {
     justify-content: center;
 }
 
-
 /* MEDIA QUERIES */
 
 @media (min-width: 976px) {
@@ -115,5 +109,4 @@ footer {
         margin: 0 auto;
         max-width: 100%;
     }
-
 }
