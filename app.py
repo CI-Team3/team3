@@ -13,7 +13,7 @@ if os.path.exists("env.py"):
 app = Flask(__name__)
 
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
-app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
+app.config["MONGO_URI"] = "mongodb+srv://alex:vOmJWdJW9Dxsnn78@cluster0.qv2d4.mongodb.net/communities?retryWrites=true&w=majority"
 # added this line to refresh templates when making changes - to be removed if not needed, pls
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 app.secret_key = os.environ.get("SECRET_KEY")
