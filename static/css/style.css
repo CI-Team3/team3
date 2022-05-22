@@ -78,9 +78,13 @@ footer {
 /* UTILITIES */
 
 /* CHAT page */
-.chat-container {
+.chat-text-color {
+    color: black;
+}
+.chat-wrapper {
     border-style: none;
 }
+
 .chat-container {
     max-height: 70vh;
 }
