@@ -82,20 +82,12 @@ footer {
     color: black;
 }
 
-.chat-wrapper {
-    border-style: none;
-}
-
 .chat-container {
     max-height: 70vh;
 }
 
 .list-group-item {
     border: 0;
-}
-
-.chat-wrapper {
-    border: 1px solid black;
 }
 
 .text-align_end {
