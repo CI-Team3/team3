@@ -35,6 +35,7 @@
 1. [**Credits**](#credits)
     * [**Code snippets**](#code-snippets)
     * [**Media**](#media)
+1. [**Future releases**](#upcoming-features)
     
 ==========================================================
 
@@ -105,7 +106,11 @@ heroku git:remote -a earthlings-hackathon
 ## Media:
 -   [Brand icon](https://www.svgrepo.com/show/95704/global-connect.svg): Brand *.svg image source
 
-
+# Upcoming Features
+  Future releases will include:
+  - Option for user to upload a picture for his story
+  - Like button for other stories in the feed
+  - Option for user to delete its own account
 
 
 
