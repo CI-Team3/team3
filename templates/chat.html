@@ -4,7 +4,7 @@
 
     <div class="chat-wrapper">
         <div class="chat-container overflow-auto">
-            <ul class="list-group list-group-flush mt-3 chat-text-color">
+            <ul class="list-group list-group-flush chat-text-color">
                 {% for message in chat %}
                     {% if session.user == message.username %}
                         <li class="list-group-item text-align_end">
@@ -16,7 +16,7 @@
                             {% endif %}
                         </li>
                     {% else %}
-                        <li class="list-group-item mt-1">
+                        <li class="list-group-item">
                             <span class="badge badge-secondary">{{ message.username }}</span>
                             <span>{{ message.text }}</span>
                             {% if session.user == "coder" or session.user == 'alex' %}
