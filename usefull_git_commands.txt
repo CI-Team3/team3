@@ -61,7 +61,12 @@ git push --set-upstream origin main
 #To untrack folder
 git rm -r --cached <folder name>
 
-
+======Getting changes from remote origin/main repository==============================
+git fetch --all
+    Fetching origin
+git merge origin/main
+    Already up to date.
+====================================
 
 pip install "pymongo[srv]"
 

@@ -47,7 +47,8 @@ body {
 /* CONTENT */
 .container {
     /* this is needed not to overlap content section with footer area */
-    margin-bottom: 60px;
+    margin-bottom: 80px;
+    margin-top: 30px;
 }
 /* LOGIN */
 .forms-centering {
@@ -55,13 +56,17 @@ body {
     margin: 0 auto;
     max-width: 70%;
 }
-.btn {
-    
-}
+
 /* REGISTER */
 .center-align {
     text-align: center;
 }
+/* CHAT */
+.form-align {
+    /* need to align the chat's text-field and submit-send buton*/
+}
+
+
 /* FOOTER */
 footer {
     position: absolute;
@@ -96,6 +101,7 @@ footer {
 
 
 /* MEDIA QUERIES */
+
 @media (min-width: 976px) {
     .forms-centering {
         margin: 0 auto;
