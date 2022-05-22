@@ -5,13 +5,15 @@ html    {
     background-size: cover;
     background-blend-mode: lighten;
     width: 100%;
-    background: rgba(0, 0, 0, 0.9) url("/static/assets/img/background.svg") no-repeat fixed center center;
+    background: rgba(0, 0, 0, 0.7) url("/static/assets/img/background.svg") no-repeat fixed center center;
     z-index: -1;
      /*    Free SVG Background by <a target="_blank" href="https://bgjar.com">BGJar</a>*/
 }
 
 body {
     background-color:transparent;
+    color: aliceblue;
+    font-weight: 300;
 }
 
 .carousel {
