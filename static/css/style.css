@@ -51,8 +51,16 @@ body {
 }
 /* LOGIN */
 .forms-centering {
+    /* this class is used for REGISTER forms too */
     margin: 0 auto;
     max-width: 70%;
+}
+.btn {
+    
+}
+/* REGISTER */
+.center-align {
+    text-align: center;
 }
 /* FOOTER */
 footer {

@@ -4,6 +4,7 @@
     <h2 class="center-align">Register</h2>
     <div class="login-container">
         <div class="row">
+            <div class="forms-centering">
             <form class="col s12 m6 offset-m3" method="POST" action="{{ url_for('register') }}" id="registration_form">
                 <div class="mb-3 mt-3">
                     <label for="username" class="form-label">Username:</label>
@@ -31,18 +32,21 @@
 
                 </div>
 
-                <button type="submit" id="register_submit" class="btn btn-primary mt-3">Submit</button>
+                <button type="submit" id="register_submit" class="btn btn-block btn-primary mt-4 mb-4">Submit</button>
             </form>
+            </div>
         </div>
 
 
         <div class="row mt-3">
+            <div class="forms-centering">
             <div class="col s12">
                 <p class="right-align">
                     Already registered? Please 
                     <a href="{{ url_for('login') }}" class="light-blue-text text-darken-4">Log in</a>
                 </p>
             </div>
+        </div>
         </div>
     </div>
 
