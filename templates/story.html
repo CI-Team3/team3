@@ -2,16 +2,50 @@
 
 {% block content %}
 
-    {#block with header image#}
     <div class="row">
-        <div class="col-12"></div>
+        <div class="col-12">
+            <h2 class="center-align">Share your story</h2>
+        </div>
     </div>
+
     {#    block with carousel items#}
-    <div class="row">
-        <div class="col-12"></div>
+    <div class="row mt-3">
+        <div class="col-12">
+            <div class="add-new-story-container">
+                <form action="{{ url_for('story_add') }}" method="post">
+                    <div class="row justify-content-center">
+                        <div class="col-2 offset-1">
+                            <label for="title">Story title</label>
+                        </div>
+                        <div class="col-9 mr-auto">
+                            <input type="text" name="title" id="title">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2 offset-1">
+                            <label for="story">Share your story</label>
+                        </div>
+                        <div class="col-9 mr-auto">
+                            <textarea name="story" id="story" rows="5" cols="80"></textarea>
+                            <input type="hidden" value="{{ session.user }}" name="created_by">
+                        </div>
+                    </div>
+                    <div class="col-9 offset-3 px-2">
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
     </div>
+    <div class="row mt-3">
+        <div class="col">
+            <h2 class="center-align">Our stories</h2>
+        </div>
+    </div>
+
     {#    block with story items #}
-    <div class="row">
+    <div class="row mt-3">
         <div class="col-12">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -46,7 +80,6 @@
                         {% endif %}
                     {% endfor %}
 
-
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -59,19 +92,5 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col ">
-            <div class="add-new-story-container">
-                <form action="{{ url_for('story_add') }}" method="post">
-                    <label for="title">Story title</label>
-                    <input type="text" name="title" id="title">
-                    <label for="story">Share your story</label>
-                    <textarea name="story" id="story" rows="5" cols="80"></textarea>
-                    <input type="hidden" value="{{ session.user }}" name="created_by">
-                    <button class="btn btn-primary">Submit</button>
 
-                </form>
-            </div>
-        </div>
-    </div>
 {% endblock %}
