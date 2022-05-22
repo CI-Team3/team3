@@ -4,6 +4,7 @@ html    {
     -o-background-size: cover;
     background-size: cover;
     background-blend-mode: lighten;
+    width: 100%;
     background: rgba(0, 0, 0, 0.9) url("/static/assets/img/background.svg") no-repeat fixed center center;
     z-index: -1;
      /*    Free SVG Background by <a target="_blank" href="https://bgjar.com">BGJar</a>*/
@@ -14,7 +15,7 @@ body {
 }
 
 .carousel {
-    height: 300px;
+    min-height: 300px;
 }
 
 .carousel-control-prev-icon {
