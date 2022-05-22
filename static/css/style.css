@@ -64,10 +64,7 @@ body {
 .center-align {
     text-align: center;
 }
-/* CHAT */
-.form-align {
-    /* need to align the chat's text-field and submit-send buton*/
-}
+
 
 
 /* FOOTER */
@@ -80,9 +77,12 @@ footer {
 
 /* UTILITIES */
 
-/*Chat page*/
+/* CHAT page */
+.chat-wrapper {
+    border-style: none;
+}
 .chat-container {
-    max-height: 50vh;
+    max-height: 70vh;
 }
 
 .list-group-item {

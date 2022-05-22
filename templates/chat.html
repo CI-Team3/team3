@@ -4,7 +4,7 @@
 
     <div class="chat-wrapper">
         <div class="chat-container overflow-auto">
-            <ul class="list-group list-group-flush mt-3">
+            <ul class="list-group list-group-flush mt-3 chat-text-color">
                 {% for message in chat %}
                     {% if session.user == message.username %}
                         <li class="list-group-item mt-1 text-align_end">
