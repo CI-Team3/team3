@@ -27,6 +27,10 @@ body {
     width: 100%;
     box-sizing: border-box;
 }
+.lp-heading h1 {
+    width: 100%;
+    text-align: center;
+}
 .content-i {
     display: flex;
     position: relative;
@@ -44,7 +48,7 @@ body {
 }
 .united-img {
     display: flex;
-    height: 100%;
+    height: 70%;
     margin-top: 20px;
 }
 
@@ -94,7 +98,7 @@ body {
 /* CONTENT */
 .container {
     /* this is needed not to overlap content section with footer area */
-    margin-bottom: 80px;
+    margin-bottom: 55px;
     margin-top: 30px;
 }
 /* LOGIN */
