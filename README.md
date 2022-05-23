@@ -112,6 +112,7 @@ heroku git:remote -a earthlings-hackathon
 ## Media:
 -   [Brand icon](https://www.svgrepo.com/show/95704/global-connect.svg): Brand *.svg image source
 -   [Background image](https://bgjar.com): Free SVG Background by <a target="_blank" href="https://bgjar.com">BGJar</a>
+-   [All for ONE for all](https://www.vectorstock.com/royalty-free-vector/all-for-one-for-vector-30278686) landing page right image
 
 # Upcoming Features
   Future releases will include:
