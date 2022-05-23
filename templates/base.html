@@ -49,7 +49,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ml-auto mr-5">
                         <!-- The (current) should be updated for the right page -->
-                        <a class="nav-item nav-link text-nowrap active" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link text-nowrap" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
                         <a class="nav-item nav-link text-nowrap" href="{{ url_for('photos') }}">Photos</a>
                     {% if session.user %}
                         <a class="nav-item nav-link text-nowrap" href="{{ url_for('my_story') }}">My Story</a>
