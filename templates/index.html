@@ -2,26 +2,36 @@
 
 
 {% block content %}
+<div class="welcoming-text">
+  <h1 style="text-align: center">Welcome to ReConnect!</h1>
+  <br />
+  <h4>
+    The pandemic has caused a multitude of issues, from which we witnesed
+    emotional, physical and economic consequences.
+    <br />
+    Psycologist are already discusing around a post-Covid19 Stress Disorder as
+    an large scale emerging phenomenon.
+    <br /><br />
+    ReConnect is an evidence-informed approach to supporting people to connect
+    with others. <br />
+    <br />
+    Positive social connections are important for our physical and mental
+    wellbeing. They can provide emotional support, practical assistance,
+    information and a sense of belonging.
 
-    <h1 style="text-align: center">ReConnect</h1>
-<h4 style="text-align: center">The place where everyone can say his story</h4>
-<h4>
-  The pandemic has caused a mulitude of issues, from which we witnesed
-  emotional, physical and economic consequences.
-</h4>
-<h4>
-  Psycologist are already discusing around a post-Covid19
-  Stress Disorder as an large scale emerging phenomenon.
-</h4>
-
-<h5>
-  Create your account now in the
-  <a
-    style="text-decoration: none; color: rgb(199, 199, 199)"
-    href="{{ url_for('register') }}"
-    >Register</a
-  >
-  area and take part in our community.
-</h5>
+    <br /><br />
+    Everyone has their own stories. This is the place where you can make it
+    heard to other.
+  </h4>
+  <h4>
+    Create your account now in the
+    <a
+      style="text-decoration: none; color: rgb(199, 199, 199)"
+      href="{{ url_for('register') }}"
+      >Register</a
+    >
+    area and take part in our community.
+  </h4>
+</div>
 
 {% endblock %}
