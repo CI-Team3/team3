@@ -40,11 +40,15 @@ body {
 }
 .content-i h1 {
     font-family: 'Anton', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.5em;
     letter-spacing: .1em;
     font-size: 40px;
     color: #fff;
+}
+.content-i p {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
 }
 .united-img {
     display: flex;
@@ -52,23 +56,6 @@ body {
     margin-top: 20px;
 }
 
-.btn-reg {
-    background: linear-gradient(to bottom, #cbcbcb 2%, #fff 100%);
-    padding: 15px 30px;
-    text-align: center;
-    transition: .5s;
-    border: none;
-    outline: none;
-    text-transform: uppercase;
-    color: #1b1b1b;
-    font-size: 20px;
-    font-weight: 700;
-    border-radius: 30px;
-    box-shadow: 1px 4px 12px rgba(94,28,68,.15);
-    margin-bottom: 1rem;
-    justify-items: center;
-
-}
 .carousel {
     min-height: 300px;
 }
@@ -78,7 +65,6 @@ body {
     width: 30px;
     height: 48px;
 }
-
 
 .item-container {
     width: 80%;
@@ -121,6 +107,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    background: linear-gradient(to bottom, #f8f9fa, 70%, grey);
 }
 
 /* UTILITIES */
